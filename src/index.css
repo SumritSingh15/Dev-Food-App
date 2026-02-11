@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+body {
+    /* This prevents the horizontal scroll globally */
+    overflow-x: hidden;
+    /* Good practice: ensures the full width is respected */
+    max-width: 100%;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
